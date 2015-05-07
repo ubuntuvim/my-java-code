@@ -15,6 +15,6 @@ import java.lang.annotation.Target;
 @Documented
 public @interface MyAnnotation02 {
 	//  定义annotation的属性
-	String description();
-	boolean isAnnotation();
+	String description() default "";
+	boolean isAnnotation() default true;
 }
