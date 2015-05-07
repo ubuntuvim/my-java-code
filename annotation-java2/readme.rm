@@ -1,0 +1,4 @@
+自定义annotation
+
+annotation-java 仅仅是定义了自己的annotation，但是annotation事实上是还有任何用的，因为还没有对应的解析程序。
+在本实例中，使用反射实现annotation的解析。
