@@ -14,11 +14,11 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)  // 定义注释解析的时机，为运行时
 @Documented
 public @interface MyAnnotation01 {
-	String value();  // 定义annotation的一个属性
+	String value() default "";  // 定义annotation的一个属性，默认值为“”
 	//  生命几种类型
 	enum ClsType {
 		staticCls, dynCls, otherCls
 	};
 	//    定义几种类的类型
-	ClsType clsType();
+	ClsType clsType() default ClsType.dynCls;
 }
